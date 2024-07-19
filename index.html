@@ -42,9 +42,21 @@
     <hr />
     <h2>About Me</h2>
     <p>
-      My name is <strong>Prem Singh</strong> and I am <strong>15</strong> years
+      My name is <strong id="name"></strong> and I am <strong id="age"></strong> years
       old. I am currently studying in <strong>11th</strong>.
     </p>
     <hr />
+
+    <script>
+      // Prompt the user for their name
+      var userName = prompt("Please enter your name:");
+      // Prompt the user for their age
+      var userAge = prompt("Please enter your age:");
+
+      // Display the user's name
+      document.getElementById("name").textContent = userName;
+      // Display the user's age
+      document.getElementById("age").textContent = userAge;
+    </script>
   </body>
 </html>
